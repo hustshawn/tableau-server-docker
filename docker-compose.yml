@@ -1,0 +1,12 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+      - "8850:8850"
+    volumes:
+      - .:/opt
+      - logvolume01:/var/log
+volumes:
+  logvolume01: {}

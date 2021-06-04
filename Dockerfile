@@ -3,9 +3,6 @@
 # our image is centos default image with systemd
 FROM centos/systemd
 
-# who's your boss?
-MAINTAINER "Tamas Foldi" <tfoldi@starschema.net>
-
 # this is the version what we're building
 ENV TABLEAU_VERSION="2019.1.1" \
     LANG=en_US.UTF-8
